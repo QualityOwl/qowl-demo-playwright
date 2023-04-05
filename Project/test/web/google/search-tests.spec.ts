@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { TestBase } from '../../../libraries/core/test-base';
-import { Log } from '../../../libraries/console/log';
+import { TestBase } from '../../test-base';
+import { Log } from '../../../src/libraries/console/log';
 
 const testBase = new TestBase();
 const log = new Log();
