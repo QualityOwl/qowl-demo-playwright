@@ -1,5 +1,5 @@
 import { Browser, test } from '@playwright/test';
-import { Log } from '../console/log';
+import { Log } from '../src/libraries/console/log';
 
 const log = new Log();
 
