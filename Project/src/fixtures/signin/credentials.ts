@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 interface Credentials {
-    username: string;
+    emailAddress: string;
     password: string;
 }
 
