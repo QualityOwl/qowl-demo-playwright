@@ -7,7 +7,7 @@ interface Credentials {
 }
 
 export function readCredentials(): Credentials {
-    const filePath = path.resolve(__dirname, 'secrets.json');
+    const filePath = path.resolve(__dirname, '../signin/qa/secrets.json');
     const rawData = fs.readFileSync(filePath, 'utf-8');
     const credentials: Credentials = JSON.parse(rawData);
     return credentials;

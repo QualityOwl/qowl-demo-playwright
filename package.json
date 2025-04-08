@@ -1,0 +1,14 @@
+{
+  "name": "qowl-demo-playwright",
+  "version": "1.0.0",
+  "description": "This repository contains my Playwright project written using TypeScript from scratch. The project is designed to showcase my skills and demonstrate my understanding of test automation using Playwright.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}

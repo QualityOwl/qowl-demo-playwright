@@ -1,5 +1,5 @@
 import { Browser, test } from '@playwright/test';
-import { Log } from '../src/libraries/console/log';
+import { Log } from '../common/logging/log';
 
 const log = new Log();
 
@@ -7,18 +7,18 @@ export class TestBase {
     async Cleanup(browser: Browser) {
         const contexts = browser.contexts();
 
-        log.StepDescription("Close browser.");
+        log.Step("Close browser.");
         for (const context of contexts) {
             await context.close();
         }
     }
 }
 
-test.beforeAll(async ({ page }) => {
+test.beforeAll(async () => {
     log.HeaderText();
 });
 
-test.afterAll(async ({ page }) => {
+test.afterAll(async () => {
     log.FooterText();
 });
 
